@@ -1,0 +1,82 @@
+{
+        "use_unknown_if_no_match": true,
+        "unknown": {
+                "attribute":"_unknown",
+                "status": {
+                        "desc":"unknown",
+                        "code":"?",
+                        "output": {
+                                "tag":"UNKNOWN",
+                                "color":"purple"
+                        }
+                }
+        },
+        "custom_outputs": {
+                "Pass_with_exception": {
+                        "attribute":"_expected_pass",
+                        "status": {
+                                "desc":"passed_with_exception",
+                                "code":"P",
+                                "output": {
+                                        "tag":"XPASSED",
+                                        "color":"green"
+                                }
+                        }
+                },
+                "Fatal_failed": {
+                        "attribute":"_fatal_fail",
+                        "status": {
+                                "desc":"fatal_failed",
+                                "code":"!",
+                                "output": {
+                                        "tag":"FAILED",
+                                        "color":"red"
+                                }
+                        }
+                },
+                "Not_available": {
+                        "attribute":"_not_available",
+                        "status": {
+                                "desc":"not_available",
+                                "code":"N",
+                                "output": {
+                                        "tag":"NOT_AVAILABLE",
+                                        "color":"blue"
+                                }
+                        }
+                },
+                "Failed_but_proceed": {
+                        "attribute":"_fail_but_proceed",
+                        "status": {
+                                "desc":"failed_but_proceed",
+                                "code":"X",
+                                "output": {
+                                        "tag":"FAILED_BUT_PROCEED",
+                                        "color":"red"
+                                }
+                        }
+                },
+                "Unimplemented": {
+                        "attribute":"_unimplemented",
+                        "status": {
+                                "desc":"unimplemented",
+                                "code":"U",
+                                "output": {
+                                        "tag":"UNIMPLEMENTED",
+                                        "color":"yellow"
+                                }
+                        }
+                },
+                "Skipped": {
+                        "attribute":"_skipped",
+                        "status": {
+                                "desc":"skipped",
+                                "code":"S",
+                                "output": {
+                                        "tag":"SKIPPED",
+                                        "color":"yellow"
+                                }
+                        }
+                }
+        }
+}
