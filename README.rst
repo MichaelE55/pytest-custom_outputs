@@ -49,95 +49,10 @@ You can install "pytest-custom_outputs" via `pip`_ from `PyPI`_::
 Usage
 -----
 
-In the directory where you will be running your pytest, create a file called "pytest_custom_outputs.json".
+In the directory where you will be running your pytest, create a file called "pytest_custom_outputs.json" or bring one over from the example folder.
 You will use this file to create your own custom outputs.
 
-EXAMPLE FILE:
-###STARTS HERE###
-{
-        "use_unknown_if_no_match": true,
-        "unknown": {
-                "attribute":"_unknown",
-                "status": {
-                        "desc":"unknown",
-                        "code":"?",
-                        "output": {
-                                "tag":"UNKNOWN",
-                                "color":"purple"
-                        }
-                }
-        },
-        "custom_outputs": {
-                "Pass_with_exception": {
-                        "attribute":"_expected_pass",
-                        "status": {
-                                "desc":"passed_with_exception",
-                                "code":"P",
-                                "output": {
-                                        "tag":"XPASSED",
-                                        "color":"green"
-                                }
-                        }
-                },
-                "Fatal_failed": {
-                        "attribute":"_fatal_fail",
-                        "status": {
-                                "desc":"fatal_failed",
-                                "code":"!",
-                                "output": {
-                                        "tag":"FAILED",
-                                        "color":"red"
-                                }
-                        }
-                },
-                "Not_available": {
-                        "attribute":"_not_available",
-                        "status": {
-                                "desc":"not_available",
-                                "code":"N",
-                                "output": {
-                                        "tag":"NOT_AVAILABLE",
-                                        "color":"blue"
-                                }
-                        }
-                },
-                "Failed_but_proceed": {
-                        "attribute":"_fail_but_proceed",
-                        "status": {
-                                "desc":"failed_but_proceed",
-                                "code":"X",
-                                "output": {
-                                        "tag":"FAILED_BUT_PROCEED",
-                                        "color":"red"
-                                }
-                        }
-                },
-                "Unimplemented": {
-                        "attribute":"_unimplemented",
-                        "status": {
-                                "desc":"unimplemented",
-                                "code":"U",
-                                "output": {
-                                        "tag":"UNIMPLEMENTED",
-                                        "color":"yellow"
-                                }
-                        }
-                },
-                "Skipped": {
-                        "attribute":"_skipped",
-                        "status": {
-                                "desc":"skipped",
-                                "code":"S",
-                                "output": {
-                                        "tag":"SKIPPED",
-                                        "color":"yellow"
-                                }
-                        }
-                }
-        }
-}
-###ENDS HERE###
-
+Please refer to the file in the example folder on how to maintain the proper structure
 
 use_unknown_if_no_match -> If True, use the unknown output below if there is no match. Otherwise, use standard skip
 unknown -> The output to use if a test's result is not in default or custom outputs 
