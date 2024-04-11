@@ -1,0 +1,10 @@
+site_name: pytest-custom_outputs
+site_description: A plugin that allows users to create and use custom outputs instead of the standard Pass and Fail
+site_author: Babak Michael Engheta
+
+theme: readthedocs
+
+repo_url: https://github.com/MichaelE55/pytest-custom_outputs
+
+pages:
+- Home: index.md
