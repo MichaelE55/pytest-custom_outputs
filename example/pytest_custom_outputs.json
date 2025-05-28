@@ -1,82 +1,40 @@
 {
-        "use_unknown_if_no_match": true,
-        "unknown": {
-                "attribute":"_unknown",
-                "status": {
-                        "desc":"unknown",
-                        "code":"?",
-                        "output": {
-                                "tag":"UNKNOWN",
-                                "color":"purple"
-                        }
-                }
-        },
         "custom_outputs": {
                 "Pass_with_exception": {
-                        "attribute":"_expected_pass",
-                        "status": {
-                                "desc":"passed_with_exception",
-                                "code":"P",
-                                "output": {
-                                        "tag":"XPASSED",
-                                        "color":"green"
-                                }
-                        }
+                        "desc":"passed_with_exception",
+                        "code":"P",
+                        "tag":"XPASSED",
+                        "color":"green"
                 },
                 "Fatal_failed": {
-                        "attribute":"_fatal_fail",
-                        "status": {
-                                "desc":"fatal_failed",
-                                "code":"!",
-                                "output": {
-                                        "tag":"FAILED",
-                                        "color":"red"
-                                }
-                        }
+                        "desc":"fatal_failed",
+                        "code":"!",
+                        "tag":"FAILED",
+                        "color":"red"
                 },
                 "Not_available": {
-                        "attribute":"_not_available",
-                        "status": {
-                                "desc":"not_available",
-                                "code":"N",
-                                "output": {
-                                        "tag":"NOT_AVAILABLE",
-                                        "color":"blue"
-                                }
-                        }
+                        "desc":"not_available",
+                        "code":"N",
+                        "tag":"NOT_AVAILABLE",
+                        "color":"blue"
                 },
                 "Failed_but_proceed": {
-                        "attribute":"_fail_but_proceed",
-                        "status": {
-                                "desc":"failed_but_proceed",
-                                "code":"X",
-                                "output": {
-                                        "tag":"FAILED_BUT_PROCEED",
-                                        "color":"red"
-                                }
-                        }
+                        "desc":"failed_but_proceed",
+                        "code":"X",
+                        "tag":"FAILED_BUT_PROCEED",
+                        "color":"red"
                 },
                 "Unimplemented": {
-                        "attribute":"_unimplemented",
-                        "status": {
-                                "desc":"unimplemented",
-                                "code":"U",
-                                "output": {
-                                        "tag":"UNIMPLEMENTED",
-                                        "color":"yellow"
-                                }
-                        }
+                        "desc":"unimplemented",
+                        "code":"U",
+                        "tag":"UNIMPLEMENTED",
+                        "color":"yellow"
                 },
                 "Skipped": {
-                        "attribute":"_skipped",
-                        "status": {
-                                "desc":"skipped",
-                                "code":"S",
-                                "output": {
-                                        "tag":"SKIPPED",
-                                        "color":"yellow"
-                                }
-                        }
+                        "desc":"skipped",
+                        "code":"S",
+                        "tag":"SKIPPED",
+                        "color":"yellow"
                 }
         }
 }
